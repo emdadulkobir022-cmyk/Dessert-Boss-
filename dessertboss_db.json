@@ -1,0 +1,210 @@
+{
+  "companies": [
+    {
+      "Company_ID": "DB-COMP-001",
+      "Company_Name": "Grameenphone HQ Cafeteria",
+      "Phone_Number": "+8801711000101",
+      "Address": "Bashundhara R/A, Dhaka",
+      "Current_Due": 60,
+      "Contact_Person": "Rafiqul Islam",
+      "Category": "Corporate Canteen"
+    },
+    {
+      "Company_ID": "DB-COMP-002",
+      "Company_Name": "Robi Axiata Executive Lounge",
+      "Phone_Number": "+8801819000202",
+      "Address": "Gulshan South Ave, Dhaka",
+      "Current_Due": 0,
+      "Contact_Person": "Kawsar Ahmed",
+      "Category": "Executive Lounge"
+    },
+    {
+      "Company_ID": "DB-COMP-003",
+      "Company_Name": "BRAC Centre Cafeteria",
+      "Phone_Number": "+8801713000404",
+      "Address": "Mohakhali, Dhaka",
+      "Current_Due": 0,
+      "Contact_Person": "Shamim Reza",
+      "Category": "Corporate Canteen"
+    },
+    {
+      "Company_ID": "DB-COMP-004",
+      "Company_Name": "Shwapno Superstore Gulshan 2",
+      "Phone_Number": "+8801721001212",
+      "Address": "Gulshan 2 Circle, Dhaka",
+      "Current_Due": 0,
+      "Contact_Person": "Moniruzzaman",
+      "Category": "Superstore"
+    },
+    {
+      "Company_ID": "DB-COMP-005",
+      "Company_Name": "Unimart Dhanmondi",
+      "Phone_Number": "+8801724001515",
+      "Address": "Satmasjid Road, Dhanmondi",
+      "Current_Due": 0,
+      "Contact_Person": "Arifur Rahman",
+      "Category": "Superstore"
+    }
+  ],
+  "employees": [
+    {
+      "Employee_ID": "EMP-001",
+      "Name": "Tanvir Hasan (তানভীর)",
+      "Role": "Delivery Rider",
+      "Phone_Number": "+8801712345678",
+      "Assigned_Zone": "Gulshan - Banani Zone",
+      "Status": "Active"
+    },
+    {
+      "Employee_ID": "EMP-002",
+      "Name": "Farhan Ahmed (ফারহান)",
+      "Role": "Production Master",
+      "Phone_Number": "+8801812345678",
+      "Assigned_Zone": "Central Kitchen Hub",
+      "Status": "Active"
+    },
+    {
+      "Employee_ID": "EMP-003",
+      "Name": "Rafiul Karim (রাফিউল)",
+      "Role": "Delivery Rider",
+      "Phone_Number": "+8801912345678",
+      "Assigned_Zone": "Dhanmondi - Motijheel Zone",
+      "Status": "Active"
+    }
+  ],
+  "inventory": [
+    {
+      "Item_Name": "Green Coconut Pudding (ডাবের পুডিং)",
+      "Unit_Price": 120,
+      "Stock_Qty": 45,
+      "Unit": "Cup (200g)",
+      "Min_Alert_Qty": 20,
+      "Category": "Puddings"
+    },
+    {
+      "Item_Name": "Royal Falooda Delight (রয়্যাল ফালুদা)",
+      "Unit_Price": 160,
+      "Stock_Qty": 35,
+      "Unit": "Jar (350ml)",
+      "Min_Alert_Qty": 15,
+      "Category": "Falooda"
+    }
+  ],
+  "orders": [
+    {
+      "Order_ID": "ORD-2026-1001",
+      "Date": "2026-11-04",
+      "Time": "09:30 AM",
+      "Company_Name": "Grameenphone HQ Cafeteria",
+      "Item_Name": "Green Coconut Pudding (ডাবের পুডিং)",
+      "Quantity": 20,
+      "Unit_Price": 120,
+      "Total_Bill": 2400,
+      "Paid_Amount": 2340,
+      "Due_Amount": 60,
+      "Payment_Method": "Cash",
+      "Delivery_Man": "Tanvir Hasan (তানভীর)",
+      "Status": "Delivered"
+    },
+    {
+      "Order_ID": "ORD-2026-1002",
+      "Date": "2026-11-04",
+      "Time": "10:15 AM",
+      "Company_Name": "Robi Axiata Executive Lounge",
+      "Item_Name": "Royal Falooda Delight (রয়্যাল ফালুদা)",
+      "Quantity": 15,
+      "Unit_Price": 160,
+      "Total_Bill": 2400,
+      "Paid_Amount": 2400,
+      "Due_Amount": 0,
+      "Payment_Method": "bKash",
+      "Delivery_Man": "Tanvir Hasan (তানভীর)",
+      "Status": "Delivered"
+    },
+    {
+      "Order_ID": "ORD-2026-1003",
+      "Date": "2026-11-04",
+      "Time": "11:00 AM",
+      "Company_Name": "BRAC Centre Cafeteria",
+      "Item_Name": "Green Coconut Pudding (ডাবের পুডিং)",
+      "Quantity": 10,
+      "Unit_Price": 120,
+      "Total_Bill": 1200,
+      "Paid_Amount": 1200,
+      "Due_Amount": 0,
+      "Payment_Method": "Cash",
+      "Delivery_Man": "Rafiul Karim (রাফিউল)",
+      "Status": "Delivered"
+    },
+    {
+      "Order_ID": "ORD-2026-1004",
+      "Date": "2026-11-04",
+      "Time": "11:45 AM",
+      "Company_Name": "Shwapno Superstore Gulshan 2",
+      "Item_Name": "Royal Falooda Delight (রয়্যাল ফালুদা)",
+      "Quantity": 12,
+      "Unit_Price": 160,
+      "Total_Bill": 1920,
+      "Paid_Amount": 1920,
+      "Due_Amount": 0,
+      "Payment_Method": "Bank",
+      "Delivery_Man": "Tanvir Hasan (তানভীর)",
+      "Status": "Delivered"
+    },
+    {
+      "Order_ID": "ORD-2026-1005",
+      "Date": "2026-11-04",
+      "Time": "12:30 PM",
+      "Company_Name": "Unimart Dhanmondi",
+      "Item_Name": "Green Coconut Pudding (ডাবের পুডিং)",
+      "Quantity": 15,
+      "Unit_Price": 120,
+      "Total_Bill": 1800,
+      "Paid_Amount": 1800,
+      "Due_Amount": 0,
+      "Payment_Method": "Cash",
+      "Delivery_Man": "Rafiul Karim (রাফিউল)",
+      "Status": "Pending"
+    }
+  ],
+  "returns": [],
+  "expenses": [
+    {
+      "Expense_ID": "EXP-2026-001",
+      "Date": "2026-11-04",
+      "Expense_Type": "Raw Materials",
+      "Amount": 5600,
+      "Note": "ডাব, চিনি, আগার-আগার ও কনডেন্সড মিল্ক পাইকারি কেনা",
+      "Recorded_By": "Farhan Ahmed (ফারহান)"
+    }
+  ],
+  "payments": [
+    {
+      "Payment_ID": "PAY-1001",
+      "Date": "2026-11-04",
+      "Company_Name": "Grameenphone HQ Cafeteria",
+      "Amount": 2340,
+      "Payment_Method": "Cash",
+      "Reference": "Order #ORD-2026-1001 Cash Memo",
+      "Recorded_By": "Tanvir Hasan (তানভীর)"
+    },
+    {
+      "Payment_ID": "PAY-1002",
+      "Date": "2026-11-04",
+      "Company_Name": "Robi Axiata Executive Lounge",
+      "Amount": 2400,
+      "Payment_Method": "bKash",
+      "Reference": "TRX-BK78942",
+      "Recorded_By": "Tanvir Hasan (তানভীর)"
+    }
+  ],
+  "config": {
+    "sheetId": "1DESSERT-BOSS-DISTRIBUTION-SHEET-2026",
+    "sheetUrl": "https://docs.google.com/spreadsheets/d/1DESSERT-BOSS-DISTRIBUTION-SHEET-2026",
+    "webhookUrl": "",
+    "autoSync": true,
+    "status": "connected",
+    "lastSyncTime": "12:30 PM"
+  },
+  "lastUpdated": "2026-11-04T07:00:00.000Z"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Dessert Boss - Food Distribution & Ledger",
+  "description": "Mobile management app for dessert distribution supplying 24 corporate and retail points with real-time Google Sheets database, thermal invoice printing, customer ledgers, and role-based access.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

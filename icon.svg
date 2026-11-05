@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="50%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="creamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Outer Ring Accent -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#10b981" stroke-width="6" stroke-opacity="0.3" />
+
+  <!-- Coconut / Pudding Bowl Shell -->
+  <g filter="url(#shadow)">
+    <!-- Coconut shell -->
+    <path d="M 120 250 C 120 370, 392 370, 392 250 Z" fill="#78350f" stroke="#451a03" stroke-width="10" />
+    
+    <!-- White coconut flesh inner rim -->
+    <path d="M 134 250 C 134 350, 378 350, 378 250 Z" fill="#ffffff" />
+    
+    <!-- Delicious Green Coconut Pudding filling -->
+    <path d="M 148 250 C 148 335, 364 335, 364 250 Z" fill="#d1fae5" />
+    
+    <!-- Pudding Top Cream Curve -->
+    <ellipse cx="256" cy="250" rx="136" ry="32" fill="url(#creamGrad)" stroke="#10b981" stroke-width="4" stroke-opacity="0.5" />
+
+    <!-- Cherry / Sweet Topping -->
+    <circle cx="256" cy="235" r="22" fill="#ef4444" stroke="#b91c1c" stroke-width="3" />
+    <ellipse cx="250" cy="229" rx="6" ry="4" fill="#ffffff" opacity="0.8" />
+    
+    <!-- Mint leaves garnish -->
+    <path d="M 270 225 C 290 215, 305 225, 300 238 C 285 240, 275 230, 270 225 Z" fill="#22c55e" />
+    <path d="M 242 225 C 222 215, 207 225, 212 238 C 227 240, 237 230, 242 225 Z" fill="#16a34a" />
+  </g>
+
+  <!-- Crown icon for "Boss" -->
+  <path d="M 216 140 L 236 175 L 256 130 L 276 175 L 296 140 L 290 195 L 222 195 Z" fill="url(#goldGrad)" filter="url(#shadow)" />
+  <circle cx="216" cy="135" r="6" fill="#fef08a" />
+  <circle cx="256" cy="125" r="7" fill="#fef08a" />
+  <circle cx="296" cy="135" r="6" fill="#fef08a" />
+
+  <!-- App Title Typography -->
+  <text x="256" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="2">
+    DESSERT BOSS
+  </text>
+  <text x="256" y="460" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#34d399" letter-spacing="3">
+    DISTRIBUTION HUB
+  </text>
+</svg>
