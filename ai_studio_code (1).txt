@@ -1,0 +1,51 @@
+dessertboss/
+├── package.json                   # প্রজেক্ট ডিপেনডেন্সি ও স্ক্রিপ্ট
+├── tsconfig.json                  # TypeScript কনফিগারেশন
+├── vite.config.ts                 # Vite + Tailwind + PWA প্লাগইন
+├── vercel.json                    # Vercel ডিপ্লয়মেন্ট ও রিরাইট রুলস
+├── server.ts                      # Express সেন্ট্রাল সিঙ্ক ব্যাকএন্ড সার্ভার
+├── index.html                     # মেটা ট্যাগ, থিম কালার ও PWA সেটআপ
+├── .env.example                   # এনভায়রনমেন্ট ভেরিয়েবল টেমপ্লেট
+├── DESSERT_BOSS_MASTER_PROMPT.md  # যেকোনো AI-তে ব্যবহারের মাস্টার প্রম্পট
+├── data/
+│   └── dessertboss_db.json        # সেন্ট্রাল JSON ডাটাবেস ফাইল
+├── public/
+│   ├── pwa-192x192.png            # মোবাইল হোমস্ক্রিন আইকন
+│   ├── pwa-512x512.png            # হাই-রেজুলেশন আইকন
+│   ├── pwa-maskable-512x512.png   # অ্যান্ড্রয়েড মাস্কেবল আইকন
+│   ├── apple-touch-icon.png       # আইফোন সাফারি আইকন
+│   └── icon.svg                   # ভেক্টর আইকন
+└── src/
+    ├── main.tsx                   # React এন্ট্রি পয়েন্ট
+    ├── App.tsx                    # মূল অ্যাপ লজিক ও রিয়েল-টাইম সিঙ্ক
+    ├── index.css                  # Tailwind CSS গ্লোবাল স্টাইল
+    ├── types/
+    │   └── index.ts               # Order, Company, Inventory, Expense টাইপস
+    ├── services/
+    │   ├── storageService.ts      # লোকাল ও সেন্ট্রাল সিঙ্ক লজিক
+    │   └── bluetoothPrinterService.ts # থার্মাল ব্লুটুথ প্রিন্টার ও RawBT
+    ├── utils/
+    │   └── timeUtils.ts           # বাংলাদেশ লাইভ টাইম (BST) ও বাংলা ক্যালেন্ডার
+    ├── hooks/
+    │   └── usePWAInstall.ts       # মোবাইল ইনস্টল প্রম্পট হ্যান্ডলার
+    ├── data/
+    │   └── initialData.ts         # প্রাথমিক ডামি/ডিফল্ট ডেটা
+    └── components/
+        ├── Header.tsx             # লাইভ বিএসটি ঘড়ি ও হেডার
+        ├── BottomNav.tsx          # গ্লাইড মোবাইল বটম নেভিগেশন
+        ├── HomeDashboard.tsx      # সেলস, বাকি ও দৈনিক খরচের সামারি
+        ├── TodaysOrdersScreen.tsx # আজকের অর্ডার তালিকা ও ডেলিভারি স্ট্যাটাস
+        ├── CustomerLedgerScreen.tsx # ২৪ ক্লায়েন্টের বাকি/লেজার ও হিসাব
+        ├── InvoiceModal.tsx       # ব্লুটুথ ক্যাশ মেমো ও রসিদ প্রিন্টার
+        ├── PaymentModal.tsx       # বকেয়া আদায় (Cash/bKash/Bank)
+        ├── QuickOrderModal.tsx    # নতুন অর্ডার এন্ট্রি মোডাল
+        ├── ExpensesScreen.tsx     # কাঁচামাল কেনাকাটার খরচ ট্র্যাকিং
+        ├── AddExpenseModal.tsx    # নতুন খরচ এন্ট্রি মোডাল
+        ├── InventoryScreen.tsx    # স্টক ও লো-স্টক অ্যালার্ট
+        ├── ProductionBatchModal.tsx # রান্না ও উৎপাদন এন্ট্রি
+        ├── ReturnRecordModal.tsx  # রিটার্ন ও নষ্ট পণ্যের হিসাব
+        ├── EmployeesScreen.tsx    # ডেলিভারি রাইডার ও স্টাফ লিস্ট
+        ├── SheetDatabaseScreen.tsx# গুগল শিট ব্যাকএন্ড ও গোপন সেটিংস
+        ├── GoogleSheetsSyncModal.tsx # অ্যাপস স্ক্রিপ্ট কানেক্টর
+        ├── PWAInstallModal.tsx    # গোপন QR কোড ও ইনস্টল গাইড
+        └── DataManagementModal.tsx# ডেটা রিসেট ও ব্যাকআপ অপশন

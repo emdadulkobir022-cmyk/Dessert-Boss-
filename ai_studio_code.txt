@@ -1,0 +1,26 @@
+# 🥥 Dessert Boss — ফুড ডিস্ট্রিবিউশন ও ক্যাশ মেমো ম্যানেজমেন্ট সিস্টেম মাস্টার প্রম্পট
+
+তুমি একজন সিনিয়র ফুল-স্ট্যাক ও মোবাইল PWA সফটওয়্যার ইঞ্জিনিয়ার। আমাকে "Dessert Boss" নামে একটি সম্পূর্ণ ফুড ডিস্ট্রিবিউশন ও একাউন্টিং ওয়েব ও মোবাইল অ্যাপ তৈরি করে দাও।
+
+## ১. বিজনেসের ধরন ও উদ্দেশ্য:
+- ব্যবসা: প্রতিদিন ডাবের পুডিং ও রয়্যাল ফালুদা বিভিন্ন করপোরেট অফিস, ক্যাফেটেরিয়া ও সুপারশপে (যেমন: Grameenphone, Robi, BRAC, Shwapno, Unimart ইত্যাদি) সরবরাহ করা।
+- মূল ফিচার: সেলস অর্ডার তৈরি, ব্লুটুথ থার্মাল প্রিন্টারে ক্যাশ মেমো প্রিন্ট, বকেয়া (Customer Due) হিসাব, দৈনিক কাঁচামাল কেনার খরচ (Expenses) ট্র্যাকিং এবং লাভ-ক্ষতি হিসাব।
+- মাল্টি-ডিভাইস সিঙ্ক: একই ডেটাবেস কম্পিউটার ও মোবাইল উভয় জায়গায় রিয়েল-টাইমে মিল থাকতে হবে (যেমন: ৫,৬০০ টাকা খরচ, ৬০ টাকা ডিউ ও ৫টি অর্ডার সব ডিভাইসে সমান থাকবে)।
+
+## ২. প্রযুক্তিগত আর্কিটেকচার (Tech Stack):
+- Frontend: React 19 + TypeScript + Vite + Tailwind CSS + Lucide Icons + PWA (Service Worker)
+- Backend: Express.js (server.ts) + JSON Database (/data/dessertboss_db.json) + REST API (/api/db & /api/db/sync)
+- Printer: Web Bluetooth API (BLE ESC/POS 58mm/80mm) + Android RawBT Intent
+- Hosting: Vercel SPA Ready (vercel.json) / Custom Domain (dessertboss.com)
+
+## ৩. ডেটাবেস টেবিল ও ফিল্ডসমূহ:
+1. Orders: Order_ID, Date, Time, Company_Name, Item_Name, Quantity, Unit_Price, Total_Bill, Paid_Amount, Due_Amount, Payment_Method, Delivery_Man, Status (Pending/Delivered)
+2. Companies (লেজার): Company_ID, Company_Name, Phone_Number, Address, Current_Due, Contact_Person, Category
+3. Expenses: Expense_ID, Date, Expense_Type (Raw Materials, Packaging, Fuel, Utility), Amount, Note, Recorded_By
+4. Payments (আদায়): Payment_ID, Date, Company_Name, Amount, Payment_Method, Reference, Recorded_By
+5. Inventory: Item_Name, Unit_Price, Stock_Qty, Unit, Min_Alert_Qty, Category
+6. Employees: Employee_ID, Name, Role, Phone_Number, Assigned_Zone, Status
+
+## ৪. ইউজার ইন্টারফেস ও গোপনীয়তা:
+- ড্যাশবোর্ডে আজকের মোট বিক্রি, মোট কালেকশন, মোট বাকি এবং মোট কাঁচামাল কেনার খরচ দেখাবে।
+- সাধারণ কর্মচারী ও কাস্টমারদের চোখের আড়ালে রাখার জন্য প্রধান স্ক্রিনে কোনো "অ্যাপ নিন" বা ইনস্টল বোতাম থাকবে না; এটি শুধুমাত্র শিট/ডাটাবেস ট্যাবের ভেতরে "গোপন ও অভ্যন্তরীণ সেটিংস" এ থাকবে।
